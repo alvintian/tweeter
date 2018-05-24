@@ -78,6 +78,11 @@
     let $name = $('<div>').attr("name", "userName").text(tweet.user.handle);
     let $oldTweet = $('<p>').attr("name", "oldTweets").text(tweet.content.text);
     let $footer = $('<div>').attr("name", "footer").text(tweet.created_at);
+    let $span = $('<span>').addClass('twirl').appendTo('footer');
+    let $flag = $('<img>').addClass('flagLogo').attr("src", "/images/flag.png");
+    let $reTweet = $('<img>').addClass('reTweetLogo').attr("src", "/images/reTweet.png");
+    let $thumbsUp = $('<img>').addClass('thumbsUpLogo').attr("src", "/images/thumbsUp.png");
+    $footer.append($flag, $reTweet, $thumbsUp);
     $header.append($logo, $h2, $name);
     $tweet.append($header, $oldTweet, $footer);
     return $tweet;
@@ -88,7 +93,7 @@
       $("section.allTweets").text("");
       for (let i = 0; i < tweets.length; i++) {
         var test = createTweetElement(tweets[i]);
-        $("section.allTweets").append(test);
+        $("section.allTweets").prepend(test);
       }
     });
   }

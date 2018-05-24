@@ -41,5 +41,17 @@ height:100px;
 padding-top:20px;
 
 }
-main article [name="footer"] {
+main article [name="footerLogo"] {
+	 margin:5px;
+	 height:70px;
+	 width:70px;
+}
+.flagLogo, .reTweetLogo, .thumbsUpLogo{
+margin:2px;
+float:right;
+position:relative;
+right:2px;
+height:20px;
+width:20px;
+z-index:9;
 }
