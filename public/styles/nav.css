@@ -1,0 +1,48 @@
+#nav-bar{
+	 padding-left: 2em;
+ padding-right: 2em;
+ height:80px;
+ background-color: #00a087;
+ color:#e8fdff;
+
+}
+ #nav-bar .logo{
+ height:80px;
+width:80px;
+}
+ #nav-bar .header{
+ 	font-size:200%;
+ 	padding-left:10px;
+ 	position:absolute;
+ 	line-height: 80px;
+}
+ #nav-bar .compose{
+  font-family: "Courier New", Courier, monospace;
+border: 1px solid;
+border-color: black;
+float:right;
+width: 150px; 
+background: #FAEBD7; 
+color: #00a087; 
+border-radius: 10px;
+  font-size: 150%;
+  	line-height: 40px; 
+padding: 10px;
+margin-top:10px;
+cursor: pointer; 
+  }
+#nav-bar .compose:hover{
+font-family: "Courier New", Courier, monospace;
+border: 1px solid;
+border-color: black;
+float:right;
+width: 150px; 
+background: white; 
+color: black; 
+border-radius: 10px;
+font-size: 150%;
+line-height: 40px; 
+padding: 10px;
+margin-top:10px;
+cursor: pointer; 
+}

@@ -6,27 +6,54 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
-
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,700,700i" rel="stylesheet">
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+        <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+         <link rel="stylesheet" href="/styles/old-tweet.css" type="text/css" />
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
+        <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </head>
 
   <body>
 
     <!-- Top nav bar (fixed) -->
     <nav id="nav-bar">
-      <img class="logo" src="/images/bird.png" width="80px" height="80px">
+      <img class="logo" src="/images/bird.png">
       <span class="header">Tweeter</span>
+      <button class="compose">Compose</button>
     </nav>
 
     <!-- Page-specific (main) content here -->
-    <main class="container">
+<main class="container">
+  
+<section class="new-tweet">
+  <form action="/tweets" method="POST" name="tweetForm">
+   <h2>Compose Tweet</h2>
+       <textarea name="text" placeholder="What are you humming about?"></textarea>
+    <input type="submit" value="Tweet" name="tweetBut">
+    <span class="counter">140</span>
+  </form>
+  <div id="error_message" class="ajax_response" style="float:left"></div>
+</section>
+
+<section class="allTweets">
+<article class="tweet">
+<header>
+    <img class="logo" src="/images/bird.png">
+    <h2 class="header">Bill Fields</h2>
+    <div name="userName">@MrFields</div>
+  </header>
+<p name="oldTweets">Little tweet here</p>
+<div name="footer">10 days ago</div>  
+</article>
+</section>
+
     </main>
 
   </body>

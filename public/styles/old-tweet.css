@@ -1,0 +1,45 @@
+main article {
+	width:400px;
+	margin:0 auto;
+	margin-top:45px;
+	height:225px;
+	border: 1px solid;
+	border-radius: 10px;
+
+}
+
+main article header{
+background-color:#D3D3D3;
+}
+main article header:hover {
+    background-color:#a6a6a6;
+}
+main article header .logo{
+	 margin:5px;
+	 height:70px;
+	 width:70px;
+}
+
+main article header h2{
+	border:none;
+	display:inline;
+	position:absolute;
+ 	line-height: 0px;
+	 padding-left:20px;
+}
+main article header [name="userName"]{
+		float:right;
+		line-height: 50px;
+}
+main article [name="oldTweets"]{
+border:1px solid;
+margin:0;
+border-top:5px;
+border-left:5px;
+border-right:5px;
+height:100px;
+padding-top:20px;
+
+}
+main article [name="footer"] {
+}
