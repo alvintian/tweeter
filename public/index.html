@@ -1,66 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta Information -->
-    <title>Tweeter - Home Page</title>
+<head>
+  <!-- Meta Information -->
+  <title>Tweeter - Home Page</title>
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,700,700i" rel="stylesheet">
-    <!-- App CSS -->
-    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
-        <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
-         <link rel="stylesheet" href="/styles/old-tweet.css" type="text/css" />
-    <!-- External JS -->
-    <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,700,700i" rel="stylesheet">
+  <!-- App CSS -->
+  <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" /> 
+  <link rel="stylesheet" href="/styles/old-tweet.css" type="text/css" />
+  <!-- External JS -->
+  <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
-    <!-- App JS -->
-    <script type="text/javascript" src="/scripts/app.js"></script>
-        <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
-  </head>
-
-  <body>
-
-    <!-- Top nav bar (fixed) -->
-    <nav id="nav-bar">
-      <img class="logo" src="/images/bird.png">
-      <span class="header">Tweeter</span>
-      <button class="compose">Compose</button>
-    </nav>
-
-    <!-- Page-specific (main) content here -->
-<main class="container">
-  
-<section class="new-tweet">
-  <form action="/tweets" method="POST" name="tweetForm">
-   <h2>Compose Tweet</h2>
-       <textarea name="text" placeholder="What are you humming about?"></textarea>
-    <input type="submit" value="Tweet" name="tweetBut">
-    <span class="counter">140</span>
-  </form>
-  <div id="error_message" class="ajax_response" style="float:left"></div>
-</section>
-
-<section class="allTweets">
-<article class="tweet">
-<header>
+  <!-- App JS -->
+  <script type="text/javascript" src="/scripts/app.js"></script>
+  <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+</head>
+<body>
+  <!-- Top nav bar (fixed) -->
+  <nav id="nav-bar">
     <img class="logo" src="/images/bird.png">
-    <h2 class="header">Bill Fields</h2>
-    <div name="userName">@MrFields</div>
-  </header>
-<p name="oldTweets">Little tweet here</p>
-<div name="footer">
-  <span class="twirl">
-      <img class="flagLogo" src="/images/flag.png">
-      <img class="reTweetLogo" src="/images/reTweet.png">
-      <img class="thumbsUpLogo" src="/images/thumbsUp.png">
-</span>
-</div>  
-</article>
-</section>
+    <span class="header">Tweeter</span>
+    <button class="compose">Compose</button>
+  </nav>
 
-    </main>
-
-  </body>
+  <!-- Page-specific (main) content here -->
+  <main class="container">  
+    <section class="new-tweet">
+      <form action="/tweets" method="POST" name="tweetForm">
+       <h2>Compose Tweet</h2>
+       <textarea name="text" placeholder="What are you humming about?"></textarea>
+       <input type="submit" value="Tweet" name="tweetBut">
+       <span class="counter">140</span>
+     </form>
+     <div id="error_message" class="ajax_response" style="float:left"></div>
+   </section>
+   <section class="allTweets">
+   </section>
+ </main>
+</body>
 </html>

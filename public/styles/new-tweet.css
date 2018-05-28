@@ -1,39 +1,39 @@
 main{
-    position:absolute;
-    top: 80px;
-    left:0px;
-    right:0px;
-    bottom:0px;
-    overflow-y:scroll;        
+	position:absolute;
+	top: 80px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	overflow-y:scroll;        
 }
 main .new-tweet{
-border-radius: 10px;
-width: 400px;
-border: 1px solid;
- background: #D3D3D3;
- margin:0 auto;
- margin-top:40px;
- padding-left: 2em;
- padding-right: 2em;
+	border-radius: 10px;
+	width: 400px;
+	border: 1px solid;
+	background: #D3D3D3;
+	margin:0 auto;
+	margin-top:40px;
+	padding-left: 2em;
+	padding-right: 2em;
 }
 main h2{
-border:1px solid;
-border-top:5px;
-border-left:5px;
-border-right:5px;
-margin-left: -20px;
-margin-right: -20px;
+	border:1px solid;
+	border-top:5px;
+	border-left:5px;
+	border-right:5px;
+	margin-left: -20px;
+	margin-right: -20px;
 }
 main form{
-padding-top: 1px;
-padding-bottom: 5px;
+	padding-top: 1px;
+	padding-bottom: 5px;
 
 }
 
 main [name="text"]{
 	margin-left: -20px;
 	margin-top: -5px;
-    width: 375px;
+	width: 375px;
 }
 main [name="tweetBut"]{
 	margin-left: -20px;
